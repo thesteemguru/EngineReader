@@ -1,6 +1,6 @@
 {
 	"basic_configurations" : {
-		"accountname" : "roger.remix",
+		"accountname" : "theguruasia",
 		"token_symbol" : "TRDO",
 		"_example_api_account_history" : "{ https://accounts.hive-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}} }",
 		"engine_api_account_history" : "https://history.steem-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}}",
