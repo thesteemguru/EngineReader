@@ -1,0 +1,22 @@
+{
+	"basic_configurations" : {
+		"accountname" : "roger.remix",
+		"token_symbol" : "TRDO",
+		"_example_api_account_history" : "{ https://accounts.hive-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}} }",
+		"engine_api_account_history" : "https://history.steem-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}}",
+		"engine_api_limit" : 500,
+		"engine_api_offset_start" : 0,
+		"engine_api_offset_continue" : 500,
+		"engine_api_operation_1" : "market_buy",
+		"engine_api_operation_2" : "market_sell"
+	},
+	"connection_configurations" : {
+		"reconnecting_attempts" : 100,
+		"attempt_idle_time" : 3000
+	},
+	"database_configurations" : {
+		"file_db_setting" : {
+			"offsetfrom" : "./data_file/offsetfrom.json"
+		}
+	}
+}
