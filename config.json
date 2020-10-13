@@ -2,8 +2,10 @@
 	"basic_configurations" : {
 		"accountname" : "theguruasia",
 		"token_symbol" : "TRDO",
-		"_example_api_account_history" : "{ https://accounts.hive-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}} }",
-		"engine_api_account_history" : "https://history.steem-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}}",
+		"is_steem_engine" : false,
+		"is_hive_engine" : true,
+		"engine_api_account_history_steem" : "https://history.steem-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}}",
+		"engine_api_account_history_hive" : "https://accounts.hive-engine.com/accountHistory?account={{accountname}}&symbol={{tokensymbol}}&limit={{historylimit}}&offset={{historyoffset}}",
 		"engine_api_limit" : 500,
 		"engine_api_offset_start" : 0,
 		"engine_api_offset_continue" : 500,
