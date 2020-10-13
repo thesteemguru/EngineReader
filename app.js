@@ -265,6 +265,8 @@ function calculateTrades(accountName, historyData, callback)
 		calcEarnedSteem = parseFloat(calcEarnedSteem);
 		
 		var profitLoss = calcEarnedSteem - calcExpensedSteem;		
+		profitLoss = profitLoss.toFixed(8);
+		profitLoss = parseFloat(profitLoss);	
 		
 		var ddata = {
 			"account_name" : accountName,
