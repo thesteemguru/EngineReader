@@ -8,8 +8,22 @@ var offsetFrom = JSON.parse(fs.readFileSync(pathOffsetFrom, "utf-8"));
 
 var accountName = config.basic_configurations.accountname;
 var tokenSymbol = config.basic_configurations.token_symbol;
-var historyLimit = config.basic_configurations.engine_api_limit; 
-var engineHistoryURL = config.basic_configurations.engine_api_account_history;
+var historyLimit = config.basic_configurations.engine_api_limit;
+
+var engineHistoryURL = "";
+
+var selectSteemEngine =  config.basic_configurations.is_steem_engine;
+var selectHiveEngine =  config.basic_configurations.is_hive_engine;
+
+if(selectSteemEngine == true)
+{	
+	engineHistoryURL = config.basic_configurations.engine_api_account_history_steem;
+}
+if(selectHiveEngine == true)
+{
+	engineHistoryURL = config.basic_configurations.engine_api_account_history_hive;
+}
+
 var historyOffset = config.basic_configurations.engine_api_offset_start;
 var historyOffsetContinue = config.basic_configurations.engine_api_offset_continue;
 var operationInfo1 = config.basic_configurations.engine_api_operation_1;
