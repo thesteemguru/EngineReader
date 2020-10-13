@@ -1,0 +1,32 @@
+{
+  "name": "Engine-Reader",
+  "version": "1.0.1",
+  "description": "Check Your Trading Profit Loss Statement.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesteemguru/enginereader"
+  },
+  "bugs": {
+    "url": "https://github.com/thesteemguru/enginereader/issues"
+  },
+  "homepage": "https://github.com/thesteemguru/enginereader#readme",
+  "keywords": [
+    "hive",
+    "steem",
+    "community",
+    "js",
+    "bot",
+    "engine",
+    "steem-engine"
+  ],
+  "author": "TheGuruAsia, TheSteemGuru",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs": "0.0.1-security",
+    "request": "^2.88.2"
+  }
+}
